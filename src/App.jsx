@@ -400,12 +400,9 @@ export default function DeloySite() {
           <section style={{ padding: "72px 0 64px" }}>
             <div className="wrap">
               <div style={{ maxWidth: 680 }}>
-                <h1 className="display" style={{ fontSize: "clamp(48px, 7vw, 84px)", fontWeight: 800, lineHeight: 0.95, textTransform: "uppercase" }}>
-                  Land to roof.
-                </h1>
-                <h2 style={{ marginTop: 18, fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 700, color: C.ground }}>
-                  Design + Build in {COMPANY.serviceArea}
-                </h2>
+                <h1 style={{ fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight:  700, color: C.ground }}>
+                Design + Build in {COMPANY.serviceArea}
+                </h1> 
                 <p style={{ marginTop: 18, fontSize: 18, lineHeight: 1.6, color: C.slate, maxWidth: 480 }}>
                   Plans. Permits. Construction. One team from concept through completion.
                 </p>
