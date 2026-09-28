@@ -411,6 +411,7 @@ export default function DeloySite() {
                   <button className="btn" style={{ background: "transparent", color: C.steel, border: `1px solid ${C.steel}` }} onClick={() => go("Projects")}>See our work</button>
                 </div>
               </div>
+              <img src="/images/fp27-elevation.png" alt="Townhome elevation drawing by Deloy" style={{ display: "block", width: "100%", maxWidth: 1100, marginTop: 56 }} />
             </div>
           </section>
 
