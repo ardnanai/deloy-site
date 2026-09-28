@@ -29,7 +29,7 @@ const COMPANY = {
 };
 
 // Flip to true after the /api/lead Cloudflare Function is deployed (launch Step 6)
-const LIVE_FORM = false;
+const LIVE_FORM = true;
 
 const C = {
   ground: "#1F3550",
