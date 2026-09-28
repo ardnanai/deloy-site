@@ -219,7 +219,19 @@ function Photo({ imgKey, alt, h = 240, rotate = 0, objectPosition = "center" }) 
 }
 
 export default function DeloySite() {
-  const [page, setPage] = useState("Home");
+  const pageFromHash = () => decodeURIComponent(window.location.hash.slice(1)) || "Home";
+  const [page, setPageState] = useState(pageFromHash);
+  const setPage = (p) => {
+    if (p === page) return;
+    window.history.pushState(null, "", p === "Home" ? "/" : "#" + encodeURIComponent(p));
+    setPageState(p);
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    const onBack = () => setPageState(pageFromHash());
+    window.addEventListener("popstate", onBack);
+    return () => window.removeEventListener("popstate", onBack);
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
