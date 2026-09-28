@@ -77,11 +77,13 @@ interface Env {
       body: JSON.stringify({
         fields: {
           Name: name,
-          Contact: contact,
-          "Project Location": projectLocation || "",
-          Description: description || "",
+          ...(contact.includes("@")
+            ? { Email: contact.trim() }
+            : { Phone: contact.trim() }),
+          Location: projectLocation || "",
+          Message: description || "",
           "Submitted At": new Date().toISOString(),
-          Status: "New",
+          "Source Page": "Website contact form",
         },
       }),
     });
