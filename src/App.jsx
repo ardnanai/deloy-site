@@ -323,7 +323,7 @@ export default function DeloySite() {
         @media (max-width: 760px) {
           .brand-button {
             gap: 8px !important;
-            transform: translateX(-10px);
+            transform: translateX(-14px);
           }
           .brand-button img {
             height: 38px !important;
