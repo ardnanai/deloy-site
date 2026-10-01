@@ -332,9 +332,11 @@ export default function DeloySite() {
           .brand-button .display {
             font-size: 21px !important;
           }
-          
           .brand-button .mono {
-            display: none;
+            display: block;
+            font-size: 9px !important;
+            letter-spacing: 0.06em !important;
+            white-space: nowrap;
           }
           .desktop-nav { display: none; }
           .burger { display: flex; }
@@ -378,7 +380,7 @@ export default function DeloySite() {
 >
   {COMPANY.name}
 </span>
-            <span className="mono" style={{ color: C.rawhide, fontSize: 12, letterSpacing: "0.08em" }}>{COMPANY.tagline}</span>
+            <span className="mono brand-tagline" style={{ color: C.rawhide, fontSize: 12, letterSpacing: "0.08em" }}>{COMPANY.tagline}</span>
           </button>
           <nav className="desktop-nav">
             {NAV.map((p) => (
