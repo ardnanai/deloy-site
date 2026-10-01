@@ -339,8 +339,18 @@ export default function DeloySite() {
       <header style={{ background: C.ground, position: "sticky", top: 0, zIndex: 20 }}>
         <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", height: 68 }}>
           <button onClick={() => go("Home")} style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", display: "flex", alignItems: "center", gap: 14 }}>
-            <img src={IMG.iconMark} alt="Deloy" style={{ height: 40, width: "auto", display: "block" }} />
-            <span className="display" style={{ color: C.plaster, fontSize: 26, fontWeight: 800, letterSpacing: "0.04em" }}>{COMPANY.name}</span>
+            <img src="/images/deloy-logo.png" alt="Deloy" style={{ height: 52, width: "auto", display: "block" }} />
+            <span
+  className="display"
+  style={{
+    color: C.plaster,
+    fontSize: 26,
+    fontWeight: 800,
+    letterSpacing: "0.04em"
+  }}
+>
+  {COMPANY.name}
+</span>
             <span className="mono" style={{ color: C.rawhide, fontSize: 12, letterSpacing: "0.08em" }}>{COMPANY.tagline}</span>
           </button>
           <nav className="desktop-nav">
@@ -401,7 +411,7 @@ export default function DeloySite() {
             <div className="wrap">
               <div style={{ maxWidth: 680 }}>
                 <h1 style={{ fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight:  700, color: C.ground }}>
-                Design + Build in {COMPANY.serviceArea}
+                Design + Build in Texas
                 </h1> 
                 <p style={{ marginTop: 18, fontSize: 18, lineHeight: 1.6, color: C.slate, maxWidth: 480 }}>
                   Plans. Permits. Construction. One team from concept through completion.
@@ -646,7 +656,7 @@ export default function DeloySite() {
       <footer style={{ background: C.ground, padding: "32px 0" }}>
         <div className="wrap" style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <img src={IMG.iconMark} alt="" style={{ height: 26, width: "auto", display: "block" }} />
+            <img src="/images/deloy-logo.png" alt="" style={{ height: 26, width: "auto", display: "block" }} />
             <span className="display" style={{ color: C.plaster, fontSize: 20, fontWeight: 800, letterSpacing: "0.04em" }}>{COMPANY.name}</span>
           </div>
           <p className="mono" style={{ color: C.slate, fontSize: 12 }}>
