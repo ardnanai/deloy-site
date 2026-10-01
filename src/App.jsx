@@ -321,6 +321,21 @@ export default function DeloySite() {
         .scope-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
         .tl-row { padding: 20px 0; border-top: 1px solid ${C.line}; }
         @media (max-width: 760px) {
+          .brand-button {
+            gap: 8px !important;
+          }
+          
+          .brand-button img {
+            height: 38px !important;
+          }
+          
+          .brand-button .display {
+            font-size: 21px !important;
+          }
+          
+          .brand-button .mono {
+            display: none;
+          }
           .desktop-nav { display: none; }
           .burger { display: flex; }
           .hero-grid, .two-col, .proj-grid, .feature-split { grid-template-columns: 1fr; gap: 28px; }
@@ -338,7 +353,19 @@ export default function DeloySite() {
       {/* ===== NAV ===== */}
       <header style={{ background: C.ground, position: "sticky", top: 0, zIndex: 20 }}>
         <div className="wrap" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", height: 68 }}>
-          <button onClick={() => go("Home")} style={{ background: "none", border: "none", cursor: "pointer", textAlign: "left", display: "flex", alignItems: "center", gap: 14 }}>
+        <button
+  className="brand-button"
+  onClick={() => go("Home")}
+  style={{
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    textAlign: "left",
+    display: "flex",
+    alignItems: "center",
+    gap: 14
+  }}
+>
             <img src="/images/deloy-logo.png" alt="Deloy" style={{ height: 52, width: "auto", display: "block" }} />
             <span
   className="display"
