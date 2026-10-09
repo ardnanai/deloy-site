@@ -616,9 +616,6 @@ export default function DeloySite() {
                 <p style={{ marginBottom: 16 }}>
                   {COMPANY.name} is a design-build firm in Dallas. It starts at the drawing table. We've been drawing and permitting our own plans since 2017. Townhomes, offices, restaurants, new construction, additions.
                 </p>
-                <p style={{ marginBottom: 16 }}>
-                  Here's why that matters. When the same person draws the plans and builds them, the plans are honest. They price right. They pass the city. They get built without the usual fights.
-                </p>
                 <p>
                   We work with owners, investors, and business owners across DFW. Got land? Got a lease? Got an idea on a napkin? We've started from all three.
                 </p>
